@@ -1,4 +1,4 @@
-/* ===== PALETA =====
+/* PALETA 
 vinho: #31081f (fundo)
 claro: #e5e5e5 (texto)
 azul:  #003f5c (títulos)
@@ -103,7 +103,7 @@ th{
   background:rgba(255,255,255,0.15);
 }
 
-/* ===== IMAGENS ===== */
+/* IMAGENS  */
 section img{
   width:13rem;
   border-radius:var(--radius);
@@ -116,7 +116,7 @@ video, iframe{
   height: 15rem;
 }
 
-/* ===== FORM ===== */
+/* FORM */
 input, select, textarea{
   width:100%;
   padding:0.7rem;
@@ -140,7 +140,7 @@ input[type="submit"]:hover{
   color:var(--vinho);
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header{
   background:rgba(255,255,255,0.08);
   padding:1.3rem;
@@ -156,7 +156,7 @@ nav a:hover{
   color:var(--bege);
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer{
   text-align:center;
   margin-top:1rem;
