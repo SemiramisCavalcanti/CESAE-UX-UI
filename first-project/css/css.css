@@ -31,7 +31,7 @@ body{
   width:100%;
   max-width:900px;
   display:flex;
-  flex-direction:column;   /* 🔥 garante que TUDO fica em coluna */
+  flex-direction:column;   
   gap:1.5rem;
 }
 
@@ -41,7 +41,7 @@ section{
   border:1px solid rgba(255,255,255,0.15);
   border-radius:var(--radius);
   padding:1.2rem 1.3rem;
-  display:block;           /* 🔥 impede ficar lado a lado */
+  display:block;          
 }
 
 section h2{
@@ -108,6 +108,12 @@ section img{
   width:13rem;
   border-radius:var(--radius);
   margin-top:0.7rem;
+}
+
+/* VIDEOS */
+video, iframe{
+  width: 30rem;
+  height: 15rem;
 }
 
 /* ===== FORM ===== */
