@@ -5,245 +5,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>18-11-2025 HTML Completo</title>
+    <!-- <link rel="stylesheet" href="css/css.css"> -->
 </head>
 
 <body>
+    <div class="container">
+        <!--  nav -->
+        <header>
+            <h1>SEMIRAMIS CAVALCANTI</h1>
+            <p>Projeto 18/11/2025 - Página HTML Completa</p>
 
-    <!--  nav -->
-    <header>
-        <h1>SEMIRAMIS CAVALCANTI</h1>
-        <p>Projeto 18/11/2025 - Página HTML Completa</p>
+            <nav>
+                <a href="#sobre">Sobre</a> |
+                <a href="#listas">Listas</a> |
+                <a href="#tabelas">Tabelas</a> |
+                <a href="#videos">Vídeos</a> |
+                <a href="#formulario">Formulário</a> |
+                <a href="https://www.linkedin.com/in/semiramis-cavalcanti-01a18013b/" target="_blank">Linkedin</a>
+            </nav>
+            <hr>
+        </header>
 
-        <nav>
-            <a href="#sobre">Sobre</a> |
-            <a href="#listas">Listas</a> |
-            <a href="#tabelas">Tabelas</a> |
-            <a href="#videos">Vídeos</a> |
-            <a href="#formulario">Formulário</a> |
-            <a href="https://www.linkedin.com/in/semiramis-cavalcanti-01a18013b/" target="_blank">Linkedin</a>
-        </nav>
-        <hr>
-    </header>
+        <!-- sobre -->
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="sobre">
 
-    <!-- sobre -->
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>
-            Olá!
+                <img src="img/foto2.png" alt="Minha foto trabalhando" style="width: 10rem;">
+                <p class="p-sobre-mim">
+                    Olá!
+                    <br>
+                    <br>
+                    Meu nome é <b>Semíramis Cavalcanti</b>, sou <i>Desenvolvedora Web Junior</i> apaixonada por
+                    tecnologia, design e aprendizado constante.
+                    Estou aprendendo <b>HTML</b>, e vou adorar transformar ideias em páginas funcionais e criativas.
+                </p>
+            </div>
+            <hr>
+        </section>
+
+        <!-- listas -->
+        <section id="listas">
+            <h2>Minhas Habilidades</h2>
+            <h3><b>Principais habilidades para desenvolver</b></h3>
+            <ul>
+                <li>Desenvolvimento com <b>HTML</b></li>
+                <li>Aprender <i>programação</i></li>
+                <li>Criar interfaces em Figma</li>
+                <li>Trabalhar em equipe e com comunicação clara</li>
+            </ul>
             <br>
-            <br>
-            Meu nome é <b>Semíramis Cavalcanti</b>, sou <i>Desenvolvedora Web Junior</i> apaixonada por tecnologia,
-            design e
-            aprendizado constante.
-            <br>
-            Estou aprendendo <b>HTML</b>, e vou adorar transformar ideias em páginas funcionais e criativas.
-        </p>
-        <img src="img/foto2.png" alt="Minha foto trabalhando" style="width: 10rem;">
-        <hr>
-    </section>
+            <q>Amo PHP!</q>
+            <h3><b>Hobbies e Interesses</b></h3>
+            <ol>
+                <li>Adoro leitura sobre desenvolvimento pessoal e tecnologias</li>
+                <li>Adoro praticar esportes: natação e vôlei</li>
+                <li>Amo viajar e conhecer novas culturas</li>
+                <li>Sou detalhista e metódica</li>
+            </ol>
+            <hr>
+        </section>
 
-    <!-- listas -->
-    <section id="listas">
-        <h2>Minhas Habilidades</h2>
-        <h3><b>Principais habilidades para desenvolver</b></h3>
-        <ul>
-            <li>Desenvolvimento com <b>HTML</b></li>
-            <li>Aprender <i>programação</i></li>
-            <li>Criar interfaces em Figma</li>
-            <li>Trabalhar em equipe e com comunicação clara</li>
-        </ul>
-        <q><i><b>Amo PHP</b></i>! </q>
-        <h3><b>Hobbies e Interesses</b></h3>
-        <ol>
-            <li>Adoro leitura sobre desenvolvimento pessoal e tecnologias</li>
-            <li>Adoro praticar esportes: natação e vôlei</li>
-            <li>Amo viajar e conhecer novas culturas</li>
-            <li>Sou detalhista e metódica</li>
-        </ol>
-        <hr>
-    </section>
+        <!-- tabelas-->
+        <section id="tabelas">
+            <h2>Tabela de Experiências</h2>
+            <!-- por via das dúvidas colocar BORDER no css, e não utilizar o frameborder. -->
+            <table border="1">
+                <tr>
+                    <th><b>Empresa</b></th>
+                    <th><b>Cargo</b></th>
+                    <th><b>Atividades</b></th>
+                </tr>
+                <tr>
+                    <td>WebDesign Studio</td>
+                    <td>Desenvolvedora Front-End</td>
+                    <td>Desenvolviemnto Web Site</td>
+                </tr>
 
-    <!-- tabelas-->
-    <section id="tabelas">
-        <h2>Tabela de Experiências</h2>
-        <table>
-            <tr>
-                <th><b>Empresa</b></th>
-                <th><b>Cargo</b></th>
-                <th><b>Atividades</b></th>
-            </tr>
-            <tr>
-                <td>WebDesign Studio</td>
-                <td>Desenvolvedora Front-End</td>
-                <td>Desenvolviemnto Web Site</td>
-            </tr>
+                <tr>
+                    <td>TechGirls</td>
+                    <td>Estagiária em Desenvolvimento</td>
+                    <td>Desenvolviemnto de Web Site em Bootstrap</td>
+                </tr>
+                <!-- <tr>
+                Só deixar quando estiver com conteudo
+                </tr> -->
+            </table>
+            <p>Veja mais sobre meus projetos no meu <a href="https://github.com/SemiramisCavalcanti"
+                    target="_blank">GitHub</a>.</p>
+            <hr>
+        </section>
 
-            <tr>
-                <td>TechGirls</td>
-                <td>Estagiária em Desenvolvimento</td>
-                <td>Desenvolviemnto de Web Site em Bootstrap</td>
-            </tr>
-            <tr>
-            </tr>
-        </table>
-        <p>Veja mais sobre meus projetos no meu <a href="https://github.com/SemiramisCavalcanti"
-                target="_blank">GitHub</a>.</p>
-        <hr>
-    </section>
+        <!-- videos -->
+        <section id="videos">
+            <h2>Apresentação em Vídeo</h2>
+            <video controls autoplay muted>
+                <source src="img/Zootopia-2016-dublado.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <p>Ou assista à minha introdução diretamente no YouTube:</p>
+            <iframe width="1047" height="442" src="https://www.youtube.com/embed/i8a7ctz-QbI"
+                title="Zootopia 2016 Dublado" border="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                <!-- por via das dúvidas colocar BORDER no css, e não utilizar o frameborder. -->
+            </iframe>
+            <hr>
+        </section>
 
-    <!-- videos -->
-    <section id="videos">
-        <h2>Apresentação em Vídeo</h2>
-        <video controls autoplay muted>
-            <source src="img/Zootopia-2016-dublado.mp4" type="video/mp4">
-            Seu navegador não suporta a tag de vídeo.
-        </video>
-        <p>Ou assista à minha introdução diretamente no YouTube:</p>
-        <iframe width="1047" height="442" src="https://www.youtube.com/embed/i8a7ctz-QbI" title="Zootopia 2016 Dublado"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
-        <hr>
-    </section>
+        <!-- formulario -->
+        <section id="formulario">
+            <h2>Formulário Completo</h2>
 
-    <!-- formulario -->
-    <section id="formulario">
-        <h2>Formulário Completo</h2>
+            <form>
+                <!-- 1 -->
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
 
-        <form>
-            <!-- 1 -->
-            <fieldset>
-                <legend>Informações Pessoais</legend>
+                    <label>Nome:</label><br>
+                    <input type="text" placeholder="Seu nome" required><br><br>
 
-                <label>Nome:</label><br>
-                <input type="text" placeholder="Seu nome" required><br><br>
+                    <label>Email:</label><br>
+                    <input type="email" placeholder="email@email.com" required><br><br>
 
-                <label>Email:</label><br>
-                <input type="email" placeholder="email@email.com" required><br><br>
+                    <label>Password:</label><br>
+                    <input type="password" required><br><br>
 
-                <label>Password:</label><br>
-                <input type="password" required><br><br>
+                    <label>Telemóvel:</label><br>
+                    <input type="tel" placeholder="Apenas números" pattern="[0-9]{9}" maxlength="9" required><br><br>
+                    <!-- pattern="[0-9]{9}" maxlength="9" -->
+                    <label>Telemóvel 2:</label><br>
+                    <!-- utilizar idade em number, NÃO UTILIZAR EM TELEFONE :( -->
+                    <input type="number" placeholder="Apenas números" required><br><br>
 
-                <label>Telemóvel:</label><br>
-                <input type="tel" placeholder="Apenas números" required><br><br>
-                <!-- pattern="[0-9]{9}" maxlength="9" -->
-                <label>Telemóvel 2:</label><br>
-                <!-- utilizar idade em number -->
-                <input type="number" placeholder="Apenas números" required><br><br>
+                    <label>País:</label><br>
+                    <select required>
+                        <option disabled selected>Selecione</option>
+                        <option>Portugal</option>
+                        <option>Brasil</option>
+                        <option>Espanha</option>
+                        <option>França</option>
+                        <option>Itália</option>
+                    </select>
+                </fieldset>
 
-                <label>País:</label><br>
-                <select required>
-                    <option disabled selected>Selecione</option>
-                    <option>Portugal</option>
-                    <option>Brasil</option>
-                    <option>Espanha</option>
-                    <option>França</option>
-                    <option>Itália</option>
-                </select>
-            </fieldset>
+                <br>
 
-            <br>
+                <!-- 2 -->
+                <fieldset>
+                    <legend>Porque nos está a contactar?</legend>
 
-            <!-- 2 -->
-            <fieldset>
-                <legend>Porque nos está a contactar?</legend>
+                    <label><input type="radio" name="motivo" required> Dúvidas</label><br>
+                    <label><input type="radio" name="motivo"> Reclamações</label><br>
+                    <label><input type="radio" name="motivo"> Sugestões</label><br>
+                    <label><input type="radio" name="motivo"> Pedido de Informação</label><br>
+                    <label><input type="radio" name="motivo"> Outros</label><br>
+                </fieldset>
 
-                <label><input type="radio" name="motivo" required> Dúvidas</label><br>
-                <label><input type="radio" name="motivo"> Reclamações</label><br>
-                <label><input type="radio" name="motivo"> Sugestões</label><br>
-                <label><input type="radio" name="motivo"> Pedido de Informação</label><br>
-                <label><input type="radio" name="motivo"> Outros</label><br>
-            </fieldset>
+                <br>
 
-            <br>
+                <!-- 3 -->
+                <fieldset>
+                    <legend>Como prefere ser contactado?</legend>
 
-            <!-- 3 -->
-            <fieldset>
-                <legend>Como prefere ser contactado?</legend>
+                    <label><input type="checkbox" name="contactado" required> Email</label><br>
+                    <label><input type="checkbox" name="contactado"> Telemóvel</label><br>
+                    <label><input type="checkbox" name="contactado"> WhatsApp</label><br>
+                    <label><input type="checkbox" name="contactado"> SMS</label><br><br>
 
-                <label><input type="checkbox" name="contactado" required> Email</label><br>
-                <label><input type="checkbox" name="contactado"> Telemóvel</label><br>
-                <label><input type="checkbox" name="contactado"> WhatsApp</label><br>
-                <label><input type="checkbox" name="contactado"> SMS</label><br><br>
+                    <label>Mensagem:</label><br>
+                    <textarea rows="4" placeholder="Escreva aqui..." required></textarea>
+                </fieldset>
 
-                <label>Mensagem:</label><br>
-                <textarea rows="4" placeholder="Escreva aqui..." required></textarea>
-            </fieldset>
+                <br>
 
-            <br>
+                <!-- 4 -->
+                <fieldset>
+                    <legend>Preferências Extras</legend>
 
-            <!-- 4 -->
-            <fieldset>
-                <legend>Preferências Extras</legend>
+                    <label>Disponibilidade para contacto:</label><br>
+                    <input type="checkbox" name="disponibilidade" required> Manhã<br>
+                    <input type="checkbox" name="disponibilidade"> Tarde<br>
+                    <input type="checkbox" name="disponibilidade"> Noite<br><br>
 
-                <label>Disponibilidade para contacto:</label><br>
-                <input type="checkbox" name="disponibilidade" required> Manhã<br>
-                <input type="checkbox" name="disponibilidade"> Tarde<br>
-                <input type="checkbox" name="disponibilidade"> Noite<br><br>
+                    <label>Data para contacto</label><br>
+                    <input type="date" min="2026-01-01" max="2026-02-28" required><br><br>
 
-                <label>Data para contacto</label><br>
-                <input type="date" min="2026-01-01" max="2026-02-28" required><br><br>
+                    <label>Escolha teu melhor horário:</label><br>
+                    <input type="time" required><br><br>
 
-                <label>Escolha teu melhor horário:</label><br>
-                <input type="time" required><br><br>
+                    <!--colocando data e hora. -->
+                    <label>Selecione data e hora:</label><br>
+                    <input type="datetime-local" required><br><br>
 
-                <!--colocando data e hora. -->
-                <label>Selecione data e hora:</label><br>
-                <input type="datetime-local" required><br><br>
+                    <label>Grau de satisfação:</label><br>
+                    <input type="range" min="0" max="10" required><br><br>
 
-                <label>Grau de satisfação:</label><br>
-                <input type="range" min="0" max="10" required><br><br>
+                    <label>Carregar ficheiro:</label><br>
+                    <input type="file" required><br><br>
 
-                <label>Carregar ficheiro:</label><br>
-                <input type="file" required><br><br>
+                    <label><input type="checkbox" required> Aceito os termos e condições</label>
+                </fieldset>
 
-                <label><input type="checkbox" required> Aceito os termos e condições</label>
-            </fieldset>
+                <br>
 
-            <br>
+                <!-- ainda o 4 -->
 
-            <!-- ainda o 4 -->
+                <fieldset>
+                    <legend>Serviços Pretendidos</legend>
 
-            <fieldset>
-                <legend>Serviços Pretendidos</legend>
+                    <label>
+                        <input type="checkbox" name="servicos" value="website" required>
+                        Criação de Website
+                    </label><br>
 
-                <label>
-                    <input type="checkbox" name="servicos" value="website" required>
-                    Criação de Website
-                </label><br>
+                    <label>
+                        <input type="checkbox" name="servicos" value="manutencao">
+                        Manutenção de Website
+                    </label><br>
 
-                <label>
-                    <input type="checkbox" name="servicos" value="manutencao">
-                    Manutenção de Website
-                </label><br>
+                    <label>
+                        <input type="checkbox" name="servicos" value="design">
+                        Design de Interfaces (UI/UX)
+                    </label><br>
 
-                <label>
-                    <input type="checkbox" name="servicos" value="design">
-                    Design de Interfaces (UI/UX)
-                </label><br>
+                    <label>
+                        <input type="checkbox" name="servicos" value="seo">
+                        Otimização SEO
+                    </label><br>
 
-                <label>
-                    <input type="checkbox" name="servicos" value="seo">
-                    Otimização SEO
-                </label><br>
+                    <label>
+                        <input type="checkbox" name="servicos" value="marketing">
+                        Marketing Digital
+                    </label><br>
+                </fieldset>
 
-                <label>
-                    <input type="checkbox" name="servicos" value="marketing">
-                    Marketing Digital
-                </label><br>
-            </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
 
-            <input type="submit" value="Enviar">
-        </form>
-        <hr>
-    </section>
+        </section>
 
-    <!-- footer -->
-    <footer>
-        <p>&copy; 2025 Semíramis Cavalcanti — Todos os direitos reservados.</p>
-    </footer>
-
+        <!-- footer -->
+        <footer>
+            <p>&copy; 2025 Semíramis Cavalcanti — Todos os direitos reservados.</p>
+        </footer>
+    </div>
 </body>
 
 </html>
