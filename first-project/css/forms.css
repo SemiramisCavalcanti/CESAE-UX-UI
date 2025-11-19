@@ -1,0 +1,340 @@
+/* vinho 31081f
+claro e5e5e5
+azul 003f5c
+bege a28d86 */
+
+body {
+    background-color: #e5e5e5;
+    color: #31081f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 
+1 valor 
+    margin: 10px; 
+    todos os lados terão 10px 
+2 valores 
+    margin: 10px 20px; 
+    10px = top e bottom, 20px = left e right 
+3 valores 
+    margin: 10px 20px 30px; 
+    top = 10px, left/right = 20px, bottom = 30px 
+4 valores 
+    margin: 10px 20px 30px 40px; 
+    top = 10px, right = 20px, bottom = 30px, left = 40px */
+
+header {
+    text-align: center;
+    color: #31081f;
+}
+
+header h1 {
+    margin: 2rem 1rem 0;
+}
+
+header p {
+    margin: 0;
+}
+
+/* "shadow" - coloca sombra nos componentes 
+text-shadow: deslocamento-x deslocamento-y desfoque cor;
+    deslocamento-x - distância horizontal da sombra (positivo = direita, negativo = esquerda)
+    deslocamento-y - distância vertical da sombra (positivo = baixo, negativo = cima)
+    desfoque - quanto a sombra se espalha (opcional, padrão = 0)
+    cor - a cor da sombra
+    obs: podemos colocar várias sombras com vírgula, fica com efeito neon ou profundidade:
+box-shadow é para elementos em geral, como div, button, etc.
+
+1️⃣ filter: drop-shadow()
+
+Funciona para qualquer elemento, incluindo imagens e SVGs.
+
+É parecido com box-shadow, mas respeita a transparência do elemento.
+
+Sintaxe:
+
+filter: drop-shadow(offsetX offsetY blurRadius color);
+
+
+Exemplo:
+
+img {
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+
+
+💡 Diferença: box-shadow cria sombra no retângulo do elemento, enquanto drop-shadow acompanha a forma real (transparências) do elemento.
+
+2️⃣ Sombra em contornos (text-stroke + text-shadow)
+
+Você pode combinar -webkit-text-stroke com text-shadow para criar efeitos de contorno + sombra em textos.
+
+Exemplo:
+
+h1 {
+  color: #fff;
+  -webkit-text-stroke: 2px #003f5c;
+  text-shadow: 2px 2px 5px #003f5c;
+}
+
+
+Isso dá efeito de neon ou 3D no texto.
+
+3️⃣ Sombra de gradiente (via pseudo-elementos)
+
+Usando ::before ou ::after com gradiente e filter: blur(), você pode criar sombras mais “artísticas” ou espalhadas.
+
+Muito usado em banners ou efeitos de glow:
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle, #003f5c, transparent);
+  filter: blur(10px);
+  z-index: -1;
+}
+
+4️⃣ Sombras internas e externas combinadas
+
+box-shadow permite combinar múltiplas sombras, inclusive inset + externas, criando profundidade complexa.
+
+div {
+  box-shadow: inset 0 0 5px #003f5c, 5px 5px 15px #ff6f91;
+}
+
+*/
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #003f5c;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 40px #ffffff,
+        0 0 80px #ffffff;
+    ;
+}
+
+form {
+    max-width: 50%;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 2%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+
+/* OBs.: é possivel misturar os dois modos quando necessário: % e px para 600px ou menor ->max-width: 600px;
+e em telas pequenas 90% ->width: 90%;
+
+form {
+    max-width: 600px;
+    width: 90%;  
+} */
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    form {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    form {
+        max-width: 75%;
+        padding: 2rem;
+    }
+}
+
+/* 
+@media 
+aplicar condições de estilo dependendo do tamanho de tela.
+tem tipos como: 
+    screen -Tela de computador, tablet, celular, monitor.
+    print - Impressão ou PDF exportado
+    all - Todos os tipos de mídia
+    speech - Leitores de tela (text-to-speech)
+combinando o screen com largura, altura, orientação, resolução. (tipo o que foi usado)
+@media screen and (max-width: 600px) {
+    form {
+        max-width: 90%;
+        padding: 1rem;
+    }
+}
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+    form {
+        max-width: 75%;
+    }
+}
+MOBILE FIRST -  considerado boa prática colocar os media queries do maio para o menor; tipo, estilos básicos para mobile e depois "ajustes" para tablet e desktop.
+DEVERIA SER ASSIM... 
+para mobile no css principal
+form {
+    width: 90%; 
+}
+tablet
+@media screen and (min-width: 601px) {
+    form {
+        max-width: 75%; 
+    }
+}
+desktop
+@media screen and (min-width: 1025px) {
+    form {
+        max-width: 50%; 
+    }
+}
+
+ */
+
+
+fieldset {
+    margin-bottom: 1.5rem;
+    border: 0.1rem solid #003f5c;
+    padding: 1rem;
+}
+
+/* 
+Diferença entre px e rem
+
+px (pixels)
+    Unidade absoluta.
+    Representa um ponto fixo na tela.
+    Ex: font-size: 16px; → sempre 16 pixels, independente do tamanho do root ou das configurações do navegador.
+
+rem (root em)
+    Unidade relativa ao tamanho da fonte do elemento root (<html>).
+    Ex: Se html { font-size: 16px; } então 1rem = 16px.
+    Ex: font-size: 2rem; → 2 × 16px = 32px.
+
+Diferença: px é fixo, rem é relativo ao root, portanto mais flexível.
+
+Quando usar cada um:
+    px: bordas finas, imagens, ícones, quando precisa de pixel-perfect.
+    rem: fontes, espaçamentos (margin, padding), elementos que devem escalar conforme o dispositivo ou acessibilidade.
+*/
+legend {
+    font-weight: bold;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    margin-top: 0.3rem;
+    /* obs: Preferências ficou MUUUUITO estranho (ajustar este em específico)  */
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+}
+
+select {
+    width: 40%;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+}
+
+/* Removendo o display block, ajustando com inline-flex */
+label.opcao {
+    display: inline-flex;
+    /* Obs.: display: inline-flex; combina inline + flexbox!!
+    -> flex ativa o Flexbox, um sistema de layout moderno para alinhar elementos horizontalmente ou verticalmente */
+    align-items: center;
+    gap: 6px;
+    margin: 4px 8px 4px 0;
+    cursor: pointer;
+}
+
+/* colocar de volta o tamanho normal */
+label.opcao input {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    background-color: #31081f;
+    color: #e5e5e5;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #6e0b43;
+    box-shadow:
+        0 0 5px #6e0b43,
+        0 0 10px #31081f,
+        0 0 20px #c0abb7,
+        0 0 40px #c0abb7,
+        0 0 80px #c0abb7;
+    ;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+footer .footer-left {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+footer .footer-left {
+    align-items: end;
+}
+
+.footer-left p,
+.footer-right p {
+    margin: 0;
+}
+
+footer a {
+    color: #003f5c;
+}
+
+@media screen and (max-width: 700px) {
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.3rem;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .footer-left nav {
+        margin: auto;
+        align-content: center;
+        display: inline;
+        white-space: nowrap;
+    }
+
+
+    .footer-right {
+       max-width: 27ch;
+        font-size: 0.85rem;
+    }
+}

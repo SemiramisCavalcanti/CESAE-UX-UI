@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Project</title>
+    <link rel="stylesheet" href="../css/forms.css">
+</head>
+
+<body>
+    <!-- Obs.: não esquecer partes principais:
+    <header></header>
+    <main></main>
+    <footer></footer> -->
+
+    <!-- Exercício 02 - Forms -->
+    <header>
+        <h1>SEMIRAMIS CAVALCANTI</h1>
+        <p>Um exemplo de forms básico</p>
+        <a href="../index.html" class="btn-back"> ↩ Voltar</a>
+        <hr>
+    </header>
+
+    <main>
+        <h2 class="title">Formulário de Inscrição</h2>
+        <form action="" method="">
+            <!-- 
+                <fieldset> - serve para agrupar elementos no formulário. utilizar para separar seções visíveis ao usuário, criando uma borda, com informações relacionadas, como: 
+                1- dados pessoais
+                2- Formação
+                3- 
+    
+                OBS.: a tag <legend> dá um título a sessão
+                -->
+
+
+            <!-- Dados Pessoais -->
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <label for="">Nome:</label>
+                <!-- required é no input -->
+                <input type="text" name="" id="" placeholder="Nome + Último Apelido" required>
+
+                <label for="">E-mail:</label>
+                <input type="email" name="" id="" placeholder="exemplo@email.com" required>
+
+                <label for=""> Telefone: </label>
+                <!-- required é no select -->
+                <select id="" name="" required>
+
+                    <!-- Obs.:
+                    required → obriga a selecionar uma opção
+                    disabled → impede que a primeira opção seja selecionada
+                    selected → parece por padrão -->
+
+                    <option value="" disabled selected>Selecione o código do país</option>
+                    <option value="+55">🇧🇷 Brasil (+55)</option>
+                    <option value="+351">🇵🇹 Portugal (+351)</option>
+                    <option value="+34">🇫🇷 Espanha (+34)</option>
+                    <option value="+33">🇪🇸 França (+33)</option>
+                </select>
+                <input type="text" name="" id="" min="10" max="15" placeholder="Digite apenas números" required>
+
+                <label for="">Idade:</label>
+                <input type="number" name="" id="" min="1" maxlength="3" required>
+            </fieldset>
+
+            <!-- Formação -->
+            <fieldset>
+                <legend>Formação</legend>
+
+                <label for="">Curso Atual:</label>
+                <input type="text" name="" id="" placeholder="Ex: Ux/Ui" required>
+
+                <label for="">Nível de Escolaridade:</label>
+                <select name="" id="" required>
+                    <option value="" disabled selected>--- Selecione ---</option>
+                    <option value="">Ensino Secundário</option>
+                    <option value="">Curso Técnico</option>
+                    <option value="">Ensino Superior</option>
+                    <!-- ??? Dúvida: Semanticamente deve ser ordem crescente, decrescente ou indifere?? Ou ainda, faria diferença a depender do público que quero atingir?? -->
+                </select>
+            </fieldset>
+
+            <!-- 3 - Preferências -->
+            <fieldset>
+                <legend>Preferências</legend>
+
+                <!-- Obs.: LABEL x P
+                -> usar <label> e não <p> dentro de formulários
+                -> <label> é específica para formularios
+                -> Acessibilidade (leitores de tela): 
+                nome do campo/ propósito/ instruções
+                para o leitor, “Áreas de interesse, campo de texto, digite aqui.”
+                no "P" o leitor não sabe que o texto está associado.
+                <label> = rótulo de campo de formulário
+                <p> = parágrafo de texto comum -->
+
+                <label for="">Áreas de Interesses:</label>
+                <!-- ??? Dúvida: Não seria for="interesse" ?? -->
+                <!-- OBs.: Não gostei deste checkbox longe. #teste: colocar dentro do label.- Quando o input está dentro do label: temos a associação automática entre label e input, não precisamos usar for="id" e id="...", de final reduz erros e evita IDs repetidos. -->
+
+                <label class="opcao">
+                    <input type="checkbox" name="interesse" id="" value="html">
+                    HTML
+                </label>
+
+                <label class="opcao">
+                    <input type="checkbox" name="interesse" id="" value="css">
+                    CSS
+                </label>
+
+                <label class="opcao">
+                    <input type="checkbox" name="interesse" id="" value="js">
+                    JavaScript
+                </label>
+
+                <!-- Linguagem Favorita -->
+                <label for="linguagem">Linguagem Favorita:</label>
+
+                <label class="opcao">
+                    <input type="radio" name="linguagem" id="fav-html" value="html">
+                    HTML
+                </label>
+
+                <label class="opcao">
+                    <input type="radio" name="linguagem" id="fav-css" value="css">
+                    CSS
+                </label>
+
+                <label class="opcao">
+                    <input type="radio" name="linguagem" id="fav-js" value="js">
+                    JavaScript
+                </label>
+
+                <label class="opcao">
+                    <input type="radio" name="linguagem" id="fav-php" value="php">
+                    PHP
+                </label>
+
+
+            </fieldset>
+
+            <!-- 4 -  Mensagem Final -->
+            <fieldset>
+                <legend> Mensagens</legend>
+                <label for=""> Deixe a sua mensagem:</label>
+
+                <!-- ??? Dúvida:  <label for=""> Deixe a sua mensagem:</label> Semanticamente não se torna redundante com a  <legend> Mensagens</legend> e placeholder="Escreva sua mensagem aqui..." sinalizando para deixar mensagem ??-->
+
+                <textarea name="" id="" rows="4" placeholder="Escreva sua mensagem aqui..." maxlength="500"
+                    required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="btn-send">
+        </form>
+        <hr>
+        <a href="../index.html" class="btn-back"> ↩ Voltar</a>
+        <hr>
+    </main>
+    <footer>
+        <div class="footer-left">
+
+            <p>Quer saber ainda mais sobre mim??</p>
+            <nav>
+                <a href="">Linkedin</a> |
+                <a href="">Instagram</a> |
+                <a href="">GitHub</a>
+            </nav>
+        </div>
+        <div class="footer-right">
+            <p>&copy; 2025 Semíramis Cavalcanti — Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

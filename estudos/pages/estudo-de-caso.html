@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FocoFin — Estudo de Caso UX/UI</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#7c3aed; --radius:12px;
+    }
+    body{margin:0;font-family:Inter,system-ui;background:#0f1724;color:#e6eef6;line-height:1.6;padding-bottom:60px}
+    .container{max-width:900px;margin:0 auto;padding:24px}
+    h1,h2,h3,h4{font-weight:700;margin-top:32px}
+    h1{font-size:32px;margin-top:8px}
+    h2{font-size:24px;color:#cdd7e4;border-left:4px solid var(--accent);padding-left:10px}
+    p{margin:12px 0;color:#d8e2ee}
+    .section{margin-top:32px;padding:20px;background:rgba(255,255,255,0.02);border-radius:var(--radius);border:1px solid rgba(255,255,255,0.05)}
+    ul{padding-left:22px;margin:12px 0}
+    li{margin:6px 0}
+    .img-block{margin:20px 0;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.05)}
+    .img-block img{width:100%;display:block}
+    .figma-embed{width:100%;height:420px;border:0;border-radius:12px;margin:20px 0}
+    a{color:#93c5fd}
+    .header{padding:30px 0 10px;border-bottom:1px solid rgba(255,255,255,0.08)}
+    .meta{color:var(--muted);margin-top:4px;font-size:14px}
+    .tag{display:inline-block;padding:4px 10px;font-size:12px;border-radius:999px;background:rgba(255,255,255,0.06);margin-right:6px;color:#b8c2cf}
+    footer{text-align:center;margin-top:50px;color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header class="header">
+      <h1>FocoFin — Redesign de Onboarding & Dashboard</h1>
+      <div class="meta">Projeto UX/UI • 2025 • Ferramentas: Figma, Miro, Maze, Notion</div>
+      <div style="margin-top:10px">
+        <span class="tag">UX Research</span>
+        <span class="tag">Mobile App</span>
+        <span class="tag">UI Design</span>
+        <span class="tag">Protótipo</span>
+      </div>
+    </header>
+
+    <div class="section">
+      <h2>1. Sumário Executivo</h2>
+      <p>O FocoFin apresentava 43% de abandono durante o onboarding. O redesign reduziu esse número para 15% (–28%) e aumentou a clareza inicial do app. O projeto envolveu pesquisa, ideação, testes e prototipação.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. Contexto e Objetivos</h2>
+      <p><strong>Produto:</strong> aplicativo de finanças pessoais para jovens adultos.</p>
+      <p><strong>Stakeholders:</strong> Gerente de Produto, Dev Mobile, UX Writer, Analista de Dados.</p>
+      <p><strong>Objetivos do negócio:</strong></p>
+      <ul>
+        <li>Diminuir abandono inicial</li>
+        <li>Aumentar retenção de 30 dias</li>
+        <li>Melhorar clareza do fluxo inicial</li>
+      </ul>
+      <p><strong>Objetivos do usuário:</strong></p>
+      <ul>
+        <li>Começar rapidamente</li>
+        <li>Entender o que fazer primeiro</li>
+        <li>Registrar gastos de forma simples</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Pesquisa</h2>
+      <p><strong>Métodos:</strong> entrevistas (8), survey (112), heurística, analytics, benchmarking.</p>
+      <p><strong>Principais insights:</strong></p>
+      <ul>
+        <li>Fluxo inicial muito longo (10 passos).</li>
+        <li>Linguagem técnica e pouco amigável.</li>
+        <li>64% não sabiam o que fazer no dashboard.</li>
+        <li>Faltava clareza do "por quê" dos dados pedidos.</li>
+        <li>Usuários queriam começar com o básico.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Síntese — Persona & Jornada</h2>
+      <h3>Persona: Júlia (24 anos)</h3>
+      <p>Estudante/estagiária, tenta controlar gastos mas se frustra com apps complexos.</p>
+
+      <h3>Pontos da Jornada Atual</h3>
+      <ul>
+        <li>Onboarding extenso → frustração.</li>
+        <li>Pouca clareza → abandono.</li>
+        <li>Dashboard confuso → não entende o primeiro passo.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>5. Ideação e Solução</h2>
+      <p>Foram criados fluxos, sketches e três variações de onboarding. A solução escolhida foca em simplicidade:</p>
+      <ul>
+        <li>Fluxo reduzido para 3 passos.</li>
+        <li>Microtextos explicando motivos.</li>
+        <li>Paleta visual mais tranquila (azul + verde).</li>
+        <li>Dashboard reorganizado em: Status do mês, Categorias, Ação principal.</li>
+      </ul>
+      <div class="img-block"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="Wireframes"></div>
+    </div>
+
+    <div class="section">
+      <h2>6. Protótipos e UI</h2>
+      <p>Protótipo criado em alta fidelidade no Figma. Inclui componentes reutilizáveis e telas responsivas.</p>
+
+      <!-- EMBED DO FIGMA → substitua por seu link -->
+      <iframe class="figma-embed" src="https://www.figma.com/embed?embed_host=share&url=REPLACE_WITH_FIGMA_EMBED_LINK" allowfullscreen></iframe>
+    </div>
+
+    <div class="section">
+      <h2>7. Testes e Iteração</h2>
+      <p><strong>Métodos:</strong> Maze + entrevistas. 10 usuários testados.</p>
+      <p><strong>Resultados:</strong></p>
+      <ul>
+        <li>Compreensão da meta mensal: 53% → 91%</li>
+        <li>Tempo de onboarding: 2:30 → 54s</li>
+        <li>Aumento no uso inicial: +38%</li>
+      </ul>
+      <p><strong>Ajustes pós-teste:</strong></p>
+      <ul>
+        <li>Mais contraste nos gráficos.</li>
+        <li>Redução de texto em telas específicas.</li>
+        <li>Melhor espaçamento e hierarquia visual.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>8. Resultados</h2>
+      <p><strong>Métricas principais:</strong></p>
+      <ul>
+        <li>Abandono: 43% → 15% (–28%)</li>
+        <li>Retenção 30 dias: +12%</li>
+        <li>Engajamento inicial: +38%</li>
+      </ul>
+      <p><strong>Aprendizados:</strong> Simplificar não empobrece. Microtextos importam. Testes A/B são essenciais.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Links & Artefatos</h2>
+      <p><a href="#">Link do Figma</a></p>
+      <p><a href="#">Pesquisa bruta (Google Drive)</a></p>
+      <p><a href="#">Repositório GitHub</a></p>
+    </div>
+
+    <footer>© 2025 — Estudo de Caso FocoFin</footer>
+
+  </div>
+</body>
+</html>

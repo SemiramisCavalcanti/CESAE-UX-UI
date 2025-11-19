@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trabalho — Página HTML Completa</title>
+  <style>
+    /* Estilos mínimos para apresentação */
+    body { font-family: Arial, sans-serif; line-height:1.5; margin:0; padding:0 1rem; }
+    header { background:#f4f4f4; padding:1rem 0; position:sticky; top:0; z-index:10; }
+    nav { display:flex; gap:0.75rem; flex-wrap:wrap; align-items:center; justify-content:flex-start; padding:0 1rem; }
+    nav a { text-decoration:none; color:#0366d6; }
+    main { max-width:980px; margin:1rem auto; padding-bottom:2rem; }
+    section { margin:2rem 0; border-bottom:1px solid #eee; padding-bottom:1rem; }
+    fieldset { margin:0.5rem 0 1rem; padding:1rem; border:1px solid #ccc; }
+    legend { font-weight:bold; }
+    label { display:block; margin:0.4rem 0 0.1rem; }
+    input, select, textarea { width:100%; max-width:100%; padding:0.4rem; box-sizing:border-box; }
+    .inline { display:flex; gap:1rem; flex-wrap:wrap; }
+    .small { max-width:300px; }
+    footer { text-align:center; color:#666; margin:2rem 0; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Semíramis Cavalcanti — Página de Trabalho</h1>
+    <nav aria-label="Menu principal">
+      <!-- Ligações internas -->
+      <a href="#sobre">Sobre</a>
+      <a href="#listas">Listas</a>
+      <a href="#tabelas">Tabelas</a>
+      <a href="#videos">Vídeos</a>
+      <a href="#formulario">Formulário</a>
+      <!-- Hiperligação externa que abre nova aba -->
+      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google (externo)</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1) SOBRE -->
+    <section id="sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre">Sobre</h2>
+      <p>Olá! Chamo-me <strong>Semíramis Cavalcanti</strong>. Sou desenvolvedora web júnior em aprendizagem contínua. Este site demonstra conhecimentos básicos de HTML: navegação, listas, tabelas, vídeo e formulários.</p>
+      <figure>
+        <img src="img/foto.png" alt="Foto de perfil (exemplo)" style="width:8rem;">
+        <figcaption>Foto de perfil (exemplo).</figcaption>
+      </figure>
+    </section>
+
+    <!-- 2) LISTAS -->
+    <section id="listas" aria-labelledby="titulo-listas">
+      <h2 id="titulo-listas">Listas</h2>
+      <p>Exemplo de lista não ordenada (habilidades):</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS básico</li>
+        <li>Git / GitHub</li>
+        <li>Trabalho em equipa</li>
+      </ul>
+
+      <p>Exemplo de lista ordenada (hobbies):</p>
+      <ol>
+        <li>Leitura</li>
+        <li>Desporto</li>
+        <li>Viagens</li>
+      </ol>
+    </section>
+
+    <!-- 3) TABELAS -->
+    <section id="tabelas" aria-labelledby="titulo-tabelas">
+      <h2 id="titulo-tabelas">Tabelas</h2>
+      <p>Tabela de experiências profissionais (exemplo):</p>
+      <table border="1" cellpadding="6" cellspacing="0">
+        <caption>Experiências</caption>
+        <thead>
+          <tr>
+            <th>Empresa</th>
+            <th>Cargo</th>
+            <th>Atividades</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>WebDesign Studio</td>
+            <td>Front-End</td>
+            <td>Desenvolvimento de sites</td>
+          </tr>
+          <tr>
+            <td>TechGirls</td>
+            <td>Estagiária</td>
+            <td>Sites em Bootstrap</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 4) VÍDEOS -->
+    <section id="videos" aria-labelledby="titulo-videos">
+      <h2 id="titulo-videos">Vídeos</h2>
+      <p>Vídeo local (se existir) e embed YouTube:</p>
+
+      <!-- Exemplo de vídeo local -->
+      <video controls width="480" preload="metadata">
+        <source src="img/exemplo.mp4" type="video/mp4">
+        O teu navegador não suporta a tag vídeo.
+      </video>
+
+      <p>Vídeo do YouTube (embed):</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/i8a7ctz-QbI" title="Vídeo de exemplo"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen loading="lazy"></iframe>
+    </section>
+
+    <!-- 5) FORMULÁRIO -->
+    <section id="formulario" aria-labelledby="titulo-formulario">
+      <h2 id="titulo-formulario">Formulário</h2>
+
+      <form action="#" method="post" enctype="multipart/form-data" novalidate>
+        <!-- Secção 1 – Informações Pessoais -->
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required placeholder="Nome completo">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+
+          <label for="senha">Password</label>
+          <input type="password" id="senha" name="senha" required minlength="6">
+
+          <label for="telefone">Número de telemóvel</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="+351 9xx xxx xxx">
+
+          <label for="pais">Escolha do país</label>
+          <select id="pais" name="pais" required>
+            <option value="">-- Selecionar país --</option>
+            <option value="pt">Portugal</option>
+            <option value="br">Brasil</option>
+            <option value="es">Espanha</option>
+            <option value="uk">Reino Unido</option>
+            <option value="fr">França</option>
+          </select>
+        </fieldset>
+
+        <!-- Secção 2 – Motivo do Contacto (radio) -->
+        <fieldset>
+          <legend>Porque nos está a contactar?</legend>
+          <div class="inline">
+            <label><input type="radio" name="motivo" value="duvidas" required> Dúvidas</label>
+            <label><input type="radio" name="motivo" value="reclamacoes"> Reclamações</label>
+            <label><input type="radio" name="motivo" value="sugestoes"> Sugestões</label>
+            <label><input type="radio" name="motivo" value="pedidos"> Pedidos de informação</label>
+            <label><input type="radio" name="motivo" value="outros"> Outros</label>
+          </div>
+        </fieldset>
+
+        <!-- Secção 3 – Forma de Contacto Preferida (checkbox + textarea) -->
+        <fieldset>
+          <legend>Como prefere ser contactado?</legend>
+          <div class="inline">
+            <label><input type="checkbox" name="preferencia[]" value="email"> Email</label>
+            <label><input type="checkbox" name="preferencia[]" value="telemovel"> Telemóvel</label>
+            <label><input type="checkbox" name="preferencia[]" value="whatsapp"> WhatsApp</label>
+            <label><input type="checkbox" name="preferencia[]" value="sms"> SMS</label>
+          </div>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva a sua mensagem aqui..."></textarea>
+        </fieldset>
+
+        <!-- Secção 4 – Extra (inventado) -->
+        <fieldset>
+          <legend>Preferências & Disponibilidade</legend>
+
+          <label for="dias">Dias disponíveis para contacto (seleccione)</label>
+          <select id="dias" name="dias[]" multiple class="small">
+            <option value="segunda">Segunda-feira</option>
+            <option value="terca">Terça-feira</option>
+            <option value="quarta">Quarta-feira</option>
+            <option value="quinta">Quinta-feira</option>
+            <option value="sexta">Sexta-feira</option>
+          </select>
+
+          <label for="horario_inicio">Hora de contacto preferida (início)</label>
+          <input type="time" id="horario_inicio" name="horario_inicio">
+
+          <label for="satisfacao">Grau de satisfação (0–10)</label>
+          <input type="range" id="satisfacao" name="satisfacao" min="0" max="10" value="7">
+
+          <label for="ficheiro">Submeter ficheiro (CV, imagem)</label>
+          <input type="file" id="ficheiro" name="ficheiro" accept=".pdf,.doc,.docx,image/*">
+
+          <label><input type="checkbox" name="termos" required> Aceito os termos e condições</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Semíramis Cavalcanti — Trabalho entregue</p>
+  </footer>
+
+</body>
+</html>
