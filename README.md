@@ -31,4 +31,4 @@ Ao longo desta formação, pretendo atingir os seguintes objetivos:
 
 📲 Conecte-se comigo:
   * LinkedIn https://www.linkedin.com/in/semiramis-cavalcanti-01a18013b/
-  * Instagram https://www.instagram.com/sscavalcanti/
+  * Instagram https://www.instagram.com/sscavalcanti.strider/
